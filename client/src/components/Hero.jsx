@@ -37,7 +37,7 @@ const Hero = () => {
           </p>
           <div>
             <button
-              onClick={()=>window.open("https://wa.me/9810534413", "_black")}
+              onClick={() => window.open("https://wa.me/9810534413", "_black")}
               data-aos="fade-up"
               data-aos-duration="1000"
               className="hire-btn"
@@ -62,7 +62,7 @@ const Hero = () => {
 
       <div className="flex flex-col gap-5 fixed right-[3%] justify-center items-center">
         <a
-          href="https://www.linkedin.com/in/aayushghimire/"
+          href="https://www.linkedin.com/in/ayushghimiree"
           target="_blank"
           rel="noopener noreferrer"
         >

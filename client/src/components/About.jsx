@@ -30,7 +30,7 @@ return (
             Connect with Me
           </a>
         </div>
-      </div>z
+      </div>
     </section>
   );
 };
