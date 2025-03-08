@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
   const [scale, setScale] = useState(1);
@@ -84,6 +84,10 @@ const Hero = () => {
             <FaTwitter />
           </a>
         </button>
+      </div>
+
+      <div className="absolute top-[86%] right-[20%] h-6">
+        <p><FaArrowDown className="text-3xl text-white hover:text-gray-500 transition-all" /></p>
       </div>
     </section>
   );
