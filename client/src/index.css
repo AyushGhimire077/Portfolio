@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0F0F0F;
+  overflow-x: hidden;
+}
+
+
+/* Typewriter Effect */
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(30) forwards;
+  animation-delay: 0s, 3.5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* Hire Btn*/
+.hire-btn {
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  background-color: #546e82;
+  border-radius: 14px;
+  position: relative;
+  transition: all 0.8s ease;
+}
+.hire-btn::before, .hire-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  z-index: -1;
+  border-radius: 14px;
+  background: linear-gradient(to left, #4c6ef5, #7e57c2);
+}
+.hire-btn::before {
+  filter: blur(4px);
+  opacity: 0.5;
+}
+.hire-btn::after {
+  filter: blur(8px);
+}
+.hire-btn:hover{
+  background: transparent;
+  transform: scale(1.1);
+}
+ .hire-btn:hover::after {
+  filter: blur(2px);
+  opacity: 0.5;
+}
+
+
