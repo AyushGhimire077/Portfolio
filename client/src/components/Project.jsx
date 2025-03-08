@@ -1,8 +1,5 @@
 import { useEffect } from "react";
 
-import ecommerce from '../assets/ecommerce.mp4';
-import livechat from '../assets/liveChat.mp4';
-
 import AOS from "aos";
 import "aos/dist/aos.css"; // import AOS styles
 
@@ -11,11 +8,6 @@ const Project = () => {
   useEffect(() => {
     AOS.init();
   }, []);
-
-  // Open video in a new tab
-  const openVideo = (videoSrc) => {
-    window.open(videoSrc, "_blank"); // This will open the video in a new tab
-  };
 
   return (
     <section className="py-20 px-6 lg:px-24 text-white">
@@ -60,15 +52,6 @@ const Project = () => {
               ))}
             </ul>
           </div>
-
-          <div
-            className="cursor-pointer text-white text-lg font-medium hover:text-gray-400 transition-colors hover:underline"
-            onClick={() => openVideo(ecommerce)} // Opens video in new tab
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-          >
-            Click to View Demo
-          </div>
         </div>
 
         {/* Live Chat Project */}
@@ -107,16 +90,6 @@ const Project = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div
-            className="cursor-pointer text-white text-lg font-medium hover:text-gray-400 transition-colors hover:underline"
-            onClick={() => openVideo(livechat)} // Opens video in new tab
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="400"
-          >
-            Click to View Demo
           </div>
         </div>
       </div>
