@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import ecommerce from '../assets/ecommerce.mp4';
-import livechat from '../assets/livechat.mp4';
+import livechat from '../assets/liveChat.mp4';
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // import AOS styles
