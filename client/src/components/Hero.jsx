@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
+import myResume from "../assets/myResume.pdf";
 import { FaLinkedin, FaGithub, FaTwitter, FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
@@ -35,7 +36,7 @@ const Hero = () => {
           <p className="text-[16px] typewriter w-fit overflow-hidden md:text-2xl text-purple-300/90">
             MERN Stack | Full Stack Developer
           </p>
-          <div>
+          <div className="flex gap-6">
             <button
               onClick={() => window.open("https://wa.me/9810534413", "_black")}
               data-aos="fade-up"
@@ -43,6 +44,14 @@ const Hero = () => {
               className="hire-btn"
             >
               Hire Me
+            </button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="800"
+              onClick={() => window.open(myResume, "_blank")}
+              className="px-8 py-3 bg-gray-800 text-white rounded-2xl hover:bg-gray-700 focus:outline-none transform hover:scale-105 transition-all duration-300"
+            >
+              View CV
             </button>
           </div>
         </div>
