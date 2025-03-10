@@ -21,9 +21,9 @@ const Navbar = () => {
       >
         AG
       </h1>
-      <div className="flex gap-12">
+      <div className="sm:flex gap-12">
         {isShow && (
-        <button onClick={()=>setShowScanner(!showScanner)} class="bg-gray-800 text-white py-2 px-5 rounded-lg font-semibold text-base hover:bg-gray-700 focus:outline-none transform hover:scale-105 transition-all duration-300 shadow-md">
+        <button onClick={()=>setShowScanner(!showScanner)} class="hidden sm:inline-block bg-gray-800 text-white py-1 px-2 sm:py-2 sm:px-5 rounded-lg font-semibold text-[12px] sm:text-base hover:bg-gray-700 focus:outline-none transform hover:scale-105 transition-all duration-300 shadow-md">
           Donate via eSewa
         </button>
         )}
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
         )}
 
-        <button className="p-2 rounded-lg hover:bg-[#1A1A1A] transition-colors duration-200">
+        <button className="hidden sm:inline-block p-2 rounded-lg hover:bg-[#1A1A1A] transition-colors duration-200">
           <span className="text-2xl text-white text-normal cursor-pointer" onClick={handleRemove} > {isShow ? <FaTimes /> : <FaBars/>}</span>
         </button>
       </div>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 html {
@@ -12,6 +15,7 @@ body{
   box-sizing: border-box;
   background-color: #0F0F0F;
   overflow-x: hidden;
+  font-family: 'Outfit' 'Poppins', sans-serif;
 }
 
 
@@ -75,4 +79,8 @@ body{
   opacity: 0.5;
 }
 
-
+@media screen and (max-width: 600px) {
+  .hire-btn {
+    font-size: 0.9rem;
+  }
+}

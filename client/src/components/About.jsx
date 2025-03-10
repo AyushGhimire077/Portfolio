@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
 return (
-    <section className="relative z-10 text-white py-24 px-6 md:px-12 lg:px-24">
-      <div className="max-w-4xl flex flex-col justify-start text-start ml-20 space-y-8">
+    <section className="relative z-10 text-white md:px-12 lg:px-24">
+      <div className="w-[80%] m-auto sm:max-w-4xl flex flex-col justify-center sm:justify-start text-start sm:ml-20 space-y-8">
 
-      <div data-aos='fade-up' data-aos-duration="1000" className="space-y-6 text-lg text-gray-300/90 leading-relaxed">
-        <p className="text-3xl font-bold">Hi, I'm Aayush</p>
+      <div data-aos='fade-up' data-aos-duration="1000" className="space-y-6 text-[14px] text-gray-300/90 leading-relaxed">
+        <p className="text-2xl sm:text-3xl font-bold">Hi, I'm Aayush</p>
           <p  >
           <span className="font-semibold text-white"></span>A passionate{' '}
             <span className="font-medium">MERN Stack Developer</span> with hands-on experience in building <br/>full-stack applications. I specialize in modern web frameworks, best practices,<br/> and backend development.
@@ -25,7 +25,7 @@ return (
             href="https://linkedin.com/in/ayushghimiree"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-gray-600 text-white px-8 py-3 rounded-full text-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-block border border-gray-600 text-white px-5 py-2 sm:px-8 sm:py-3 rounded-full text-[14px] sm:text-lg hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Connect with Me
           </a>

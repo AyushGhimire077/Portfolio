@@ -10,8 +10,8 @@ const Project = () => {
   }, []);
 
   return (
-    <section className="py-20 px-6 lg:px-24 text-white">
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <section className="py-20 z-20 px-6 lg:px-24 text-white">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
         Recent Projects
       </h1>
 
@@ -22,16 +22,16 @@ const Project = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-xl sm:text-3xl font-bold text-white mb-6">
             Ecommerce Website
           </h2>
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-[14px] sm:text-lg text-gray-300 mb-6">
             Full-featured modern ecommerce platform with secure authentication
             and order tracking.
           </p>
 
           <div className="mb-8">
-            <h3 className="text-xl font-semibold text-purple-400 mb-4">
+            <h3 className="text-[16px] sm:text-xl font-semibold text-purple-400 mb-4">
               Key Features
             </h3>
             <ul className="space-y-3">
@@ -61,16 +61,16 @@ const Project = () => {
           data-aos-duration="1200"
           data-aos-delay="200"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="text-lg sm:text-3xl font-bold text-white mb-6">
             Live Chat Application
           </h2>
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-[14px] sm:text-lg text-gray-300 mb-6">
             Real-time messaging platform with modern features and responsive
             design.
           </p>
 
           <div className="mb-8">
-            <h3 className="text-xl font-semibold text-blue-400 mb-4">
+            <h3 className="text-[16px] sm:text-xl font-semibold text-blue-400 mb-4">
               Key Features
             </h3>
             <ul className="space-y-3">

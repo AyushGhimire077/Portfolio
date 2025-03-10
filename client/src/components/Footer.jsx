@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-white">Let's Connect</h3>
-            <div className="space-y-2">
+            <div className="space-y-2 text-[14px] sm:text-[16px]">
               <div className="flex items-center gap-3">
                 <EnvelopeIcon className="h-5 w-5 text-purple-400" />
                 <a
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white">Follow Me</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-white">Follow Me</h3>
             <div className="flex gap-4">
               <a
                 href="https://github.com/yourgithub"
@@ -74,7 +74,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-[13px] sm:text-[16px]">
             &copy; {new Date().getFullYear()} Aayush Ghimire. All rights
             reserved.
           </p>

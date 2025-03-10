@@ -43,12 +43,12 @@ const TechStack = () => {
 
   const SkillBox = ({ title, skills }) => (
     <div
-      className="bg-gray-800 p-6 mx-10 rounded-xl border border-gray-700 shadow-xl transition-all hover:border-blue-500"
+      className="bg-gray-800 p-6 mx-4 sm:mx-10 rounded-xl border border-gray-700 shadow-xl transition-all hover:border-blue-500"
       data-aos="fade-up"
       data-aos-delay="200"
     >
-      <h3 className="text-2xl font-bold text-white mb-6">{title}</h3>
-      <div className="grid grid-cols-2 gap-4">
+      <h3 className="text-lg sm:text-2xl font-bold text-white mb-6">{title}</h3>
+      <div className="grid grid-cols-2 gap-4 z-10">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -57,11 +57,11 @@ const TechStack = () => {
             data-aos-delay={300 + index * 100}
           >
             <img
-             className={`w-16 h-16  transition-all`} 
+             className={`w-11 h-11 sm:w-16 sm:h-16  transition-all`} 
               src={skill.icon}
               alt={skill.name}
             />
-            <p className="text-gray-300 font-medium mt-2">{skill.name}</p>
+            <p className="text-gray-300 text-[15px] sm:text-lg font-medium mt-3.5 sm:mt-4">{skill.name}</p>
           </div>
         ))}
       </div>
@@ -71,7 +71,7 @@ const TechStack = () => {
   return (
     <section className="py-20 px-6 lg:px-24 text-white">
       <h2
-        className="text-4xl font-bold pl-16 mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
+        className="text-2xl sm:text-4xl font-bold pl-[12%] sm:pl-16 mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"
         data-aos="zoom-in"
       >
         Tech Stack

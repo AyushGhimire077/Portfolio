@@ -18,21 +18,21 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 lg:px-24 pt-24 pb-12">
-      <div className="grid lg:grid-cols-2 z-10 items-center w-full max-w-7xl pl-10 mx-auto">
-        <div className="space-y-8">
+    <section className="min-h-screen flex items-center justify-center px-6 lg:px-24 -mt-9 sm:pt-24 pb-12">
+      <div className="grid lg:grid-cols-2 z-10 items-center w-full max-w-7xl sm:pl-10 mx-auto">
+        <div className="space-y-4 sm:space-y-8">
           <h1
             data-aos="fade-in"
             data-aos-duration="1000"
             data-aos-delay="100"
-            className="text-5xl md:text-6xl font-bold text-white leading-tight"
+            className="sm:text-5xl md:text-6xl text-4xl font-bold text-white leading-tight"
           >
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Aayush
             </span>{" "}
             Ghimire
           </h1>
-          <p className="text-lg typewriter w-fit overflow-hidden md:text-2xl text-purple-300/90">
+          <p className="text-[16px] typewriter w-fit overflow-hidden md:text-2xl text-purple-300/90">
             MERN Stack | Full Stack Developer
           </p>
           <div>
@@ -49,10 +49,10 @@ const Hero = () => {
 
         <div
           data-aos="zoom-in"
-          className="absolute dark:bg-[#0F0F0F] opacity-60 -z-10 left-[10px]"
+          className="hidden sm:inline-block absolute bg-[#0F0F0F] -z-10 left-[2%]"
         >
           <img
-            className="w-full h-[500px] object-contain rounded-2xl shadow-2xl"
+            className="  w-full h-[500px] object-contain opacity-40 "
             src={logo}
             alt="Aayush Ghimire"
             style={{ transform: `scale(${scale})` }}
@@ -60,22 +60,22 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 fixed right-[3%] justify-center items-center">
+      <div className="flex z-10 flex-col gap-5 fixed right-[5%] sm:right-[3%] justify-center items-center">
         <a
           href="https://www.linkedin.com/in/ayushghimiree"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin className="text-2xl text-white hover:text-gray-500 transition-all" />
+          <FaLinkedin className="text-xl sm:text-2xl text-white hover:text-gray-500 transition-all" />
         </a>
         <a
           href="https://github.com/AyushGhimire077"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="text-2xl text-white hover:text-gray-500 transition-all" />
+          <FaGithub className="text-xl sm:text-2xl text-white hover:text-gray-500 transition-all" />
         </a>
-        <button className="text-2xl text-white hover:text-gray-500 transition-all">
+        <button className="text-xl sm:text-2xl text-white hover:text-gray-500 transition-all">
           <a
             href="https://x.com/aayushghimiree"
             target="_blank"
@@ -87,7 +87,9 @@ const Hero = () => {
       </div>
 
       <div className="absolute top-[86%] right-[20%] h-6">
-        <p><FaArrowDown className="text-3xl text-white hover:text-gray-500 transition-all" /></p>
+        <p>
+          <FaArrowDown className="text-xl sm:text-3xl text-teal-500 hover:text-gray-500 transition-all" />
+        </p>
       </div>
     </section>
   );
