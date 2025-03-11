@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
-import myResume from "../assets/myResume.pdf";
 import { FaLinkedin, FaGithub, FaTwitter, FaArrowDown } from "react-icons/fa";
 
 const Hero = () => {
@@ -48,7 +47,7 @@ const Hero = () => {
             <button
               data-aos="fade-right"
               data-aos-duration="800"
-              onClick={() => window.open(myResume, "_blank")}
+              onClick={() => window.open('/MyResume.pdf', "_blank")}
               className="px-8 py-3 bg-gray-800 text-white rounded-2xl hover:bg-gray-700 focus:outline-none transform hover:scale-105 transition-all duration-300"
             >
               View CV
