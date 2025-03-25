@@ -35,7 +35,7 @@ const Hero = () => {
           <p className="text-[16px] typewriter w-fit overflow-hidden md:text-2xl text-purple-300/90">
             MERN Stack | Full Stack Developer
           </p>
-          <div className="flex gap-6">
+          <div className="flex gap-6 duration-1000">
             <button
               onClick={() => window.open("https://wa.me/9810534413", "_black")}
               data-aos="fade-up"

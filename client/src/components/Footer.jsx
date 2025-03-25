@@ -45,7 +45,7 @@ const Footer = () => {
             <h3 className="text-lg sm:text-xl font-bold text-white">Follow Me</h3>
             <div className="flex gap-4">
               <a
-                href="https://github.com/yourgithub"
+                href="https://github.com/ayushghimire077"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-purple-400 transition-colors"
